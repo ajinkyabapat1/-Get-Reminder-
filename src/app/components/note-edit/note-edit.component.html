@@ -1,5 +1,5 @@
 <h1 class="heading">Edit your note</h1>
-<mat-card *ngIf="note" class="note-edit" [ngClass]="{'done': note.isDone}">
+<mat-card  #Mycard *ngIf="note" class="note-edit" [ngClass]="{'done': note.isDone}">
   <button mat-mini-fab color="primary" class="delete-button" (click)="delete()">
     <mat-icon>delete_forever</mat-icon>
   </button>
@@ -17,6 +17,6 @@
       <mat-icon class="icon">archive</mat-icon>
     </mat-checkbox>
     <button mat-stroked-button (click)="goBack()">Back</button>
-    <button mat-stroked-button color="primary" (click)="save()">Save</button>
+    <button mat-stroked-button color="primary" (click)="save()" [disabled]="Mycard.invalid">Save</button>
   </mat-card-actions>
 </mat-card>
