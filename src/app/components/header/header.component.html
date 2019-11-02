@@ -1,0 +1,24 @@
+<!-- <mat-toolbar class="header">
+  <mat-toolbar-row>
+    <span>Angular Keep</span>
+    <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/']">Dashboard</a>
+    <a mat-flat-button color="primary" class="nav-link" [routerLink]="['/archive']">Archive</a>
+  </mat-toolbar-row>
+</mat-toolbar> -->
+
+
+<mat-toolbar class="header">
+  <div fxHide.sm fxHide.md fxHide.xl fxHide.lg>
+    <button mat-icon-button (click)="onSidenavToggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div><a routerLink="/"><img src="assets/gkeep.jpg" style="width:50px;height:50px"/></a></div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+    <!-- <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+      <li><a routerLink="/">Set Reminder</a></li>
+      <li><a routerLink="/archive">Archive</a></li>
+    
+    </ul> -->
+  </div>
+</mat-toolbar>
