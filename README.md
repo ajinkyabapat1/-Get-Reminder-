@@ -33,17 +33,14 @@ Install VS code
 Install Node js
 Install Angular CLI : npm install -g @angular/cli
 
-once done with all installation ,run following commands
+## once done with all installation ,run following commands
 
 1. ng update
 2. npm install
 3. install --save-dev @angular-devkit/build-angular
 4. ng serve 
 
-
-
-
-
+Angular Project "Let me remind u " will run 
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README]
